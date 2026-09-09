@@ -1,0 +1,455 @@
+/* =========================================================
+   REGISTRAR VACUNA
+   ========================================================= */
+
+.vacuna-main {
+    min-height: 100vh;
+
+    padding: 120px 25px 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background:
+        radial-gradient(
+            circle at 6% 25%,
+            rgba(34, 184, 207, 0.08) 0 34px,
+            transparent 35px
+        ),
+        radial-gradient(
+            circle at 95% 48%,
+            rgba(255, 107, 107, 0.08) 0 38px,
+            transparent 39px
+        ),
+        #f7f3ee;
+}
+
+
+/* =========================================================
+   TARJETA
+   ========================================================= */
+
+.vacuna-card {
+    width: 100%;
+    max-width: 850px;
+
+    box-sizing: border-box;
+
+    padding: 30px 40px 35px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 30px rgba(13, 59, 102, 0.14);
+}
+
+
+/* =========================================================
+   ENCABEZADO
+   ========================================================= */
+
+.vacuna-encabezado {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+.vacuna-encabezado h1 {
+    margin: 0;
+
+    color: #0d3b66;
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    font-size: 26px;
+}
+
+
+.vacuna-encabezado p {
+    margin-top: 8px;
+
+    color: #6b7780;
+
+    font-size: 14px;
+}
+
+
+.detalle-vacuna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 8px;
+}
+
+
+.detalle-vacuna span {
+    width: 68px;
+    height: 2px;
+
+    background: #22b8cf;
+}
+
+
+.detalle-vacuna strong {
+    color: #ff6b6b;
+}
+
+
+/* =========================================================
+   ANIMAL
+   ========================================================= */
+
+.animal-resumen {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 29px;
+
+    padding: 17px 20px;
+
+    border: 1px solid rgba(34, 184, 207, 0.30);
+
+    border-radius: 14px;
+
+    background: rgba(34, 184, 207, 0.055);
+}
+
+
+.animal-foto {
+    width: 68px;
+    height: 68px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    font-size: 34px;
+
+    box-shadow:
+        0 3px 10px rgba(13, 59, 102, 0.10);
+}
+
+
+.animal-info h2 {
+    margin: 2px 0 5px;
+
+    color: #0d3b66;
+
+    font-size: 20px;
+}
+
+
+.animal-info p {
+    margin: 3px 0;
+
+    color: #5f6d76;
+
+    font-size: 13px;
+}
+
+
+.animal-etiqueta {
+    color: #22a9bd;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   SECCIONES
+   ========================================================= */
+
+.vacuna-seccion {
+    margin-bottom: 30px;
+}
+
+
+.vacuna-seccion > h2 {
+    margin: 0 0 17px;
+
+    padding-bottom: 9px;
+
+    border-bottom: 1px solid #dfe5e9;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.vacuna-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px 22px;
+}
+
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   CAMPOS
+   ========================================================= */
+
+.campo-vacuna label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.campo-vacuna label span {
+    color: #ff6b6b;
+}
+
+
+.campo-vacuna input,
+.campo-vacuna select {
+    width: 100%;
+    height: 46px;
+
+    box-sizing: border-box;
+
+    padding: 0 13px;
+
+    border: 1px solid #ccd7df;
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    color: #333333;
+}
+
+
+.campo-vacuna textarea {
+    width: 100%;
+    min-height: 90px;
+
+    box-sizing: border-box;
+
+    padding: 12px 13px;
+
+    border: 1px solid #ccd7df;
+    border-radius: 10px;
+
+    outline: none;
+    resize: vertical;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+
+.campo-vacuna input:focus,
+.campo-vacuna select:focus,
+.campo-vacuna textarea:focus {
+    border-color: #22b8cf;
+
+    box-shadow:
+        0 0 0 3px rgba(34, 184, 207, 0.12);
+}
+
+
+.campo-vacuna small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #74818a;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   NOTA
+   ========================================================= */
+
+.nota-registro {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    background: rgba(34, 184, 207, 0.07);
+
+    color: #62717a;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.nota-registro span {
+    color: #22a9bd;
+
+    font-weight: bold;
+}
+
+
+.nota-registro p {
+    margin: 0;
+}
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+.vacuna-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.btn-guardar-vacuna,
+.btn-cancelar-vacuna,
+.btn-regresar-expediente {
+    min-height: 46px;
+
+    box-sizing: border-box;
+
+    padding: 0 23px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.btn-guardar-vacuna {
+    border: none;
+
+    background: #0d3b66;
+
+    color: #ffffff;
+}
+
+
+.btn-guardar-vacuna:hover {
+    background: #125083;
+}
+
+
+.btn-cancelar-vacuna {
+    border: 1px solid #ccd7df;
+
+    background: #ffffff;
+
+    color: #0d3b66;
+}
+
+
+.btn-regresar-expediente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #0d3b66;
+
+    background: #ffffff;
+
+    color: #0d3b66;
+
+    text-decoration: none;
+}
+
+
+.btn-regresar-expediente:hover {
+    background: #0d3b66;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .vacuna-main {
+        padding: 100px 15px 90px;
+    }
+
+    .vacuna-card {
+        padding: 25px 20px 30px;
+    }
+
+    .vacuna-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-completo {
+        grid-column: auto;
+    }
+
+    .animal-resumen {
+        align-items: flex-start;
+    }
+
+    .vacuna-botones {
+        flex-direction: column;
+    }
+
+    .btn-guardar-vacuna,
+    .btn-cancelar-vacuna,
+    .btn-regresar-expediente {
+        width: 100%;
+    }
+
+}

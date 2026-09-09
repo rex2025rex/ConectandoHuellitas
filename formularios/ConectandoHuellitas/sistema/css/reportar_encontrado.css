@@ -1,0 +1,642 @@
+/* =========================================================
+   CONECTANDO HUELLITAS
+   REPORTAR MASCOTA ENCONTRADA
+   ========================================================= */
+
+
+/* =========================================================
+   ÁREA CENTRAL
+   ========================================================= */
+
+.encontrado-main {
+    min-height: 100vh;
+
+    padding:
+        122px
+        24px
+        90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background:
+        radial-gradient(
+            circle at 4% 35%,
+            rgba(34, 184, 207, 0.08) 0 34px,
+            transparent 35px
+        ),
+        radial-gradient(
+            circle at 94% 22%,
+            rgba(255, 107, 107, 0.08) 0 36px,
+            transparent 37px
+        ),
+        #f7f3ee;
+}
+
+
+/* =========================================================
+   TARJETA
+   ========================================================= */
+
+.encontrado-card {
+    width: 100%;
+    max-width: 980px;
+
+    padding:
+        30px
+        40px
+        34px;
+
+    background-color: #ffffff;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 30px rgba(13, 59, 102, 0.13);
+}
+
+
+/* =========================================================
+   ENCABEZADO
+   ========================================================= */
+
+.encontrado-encabezado {
+    text-align: center;
+
+    margin-bottom: 24px;
+}
+
+
+.encontrado-etiqueta {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #22aeb3;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.encontrado-encabezado h1 {
+    margin: 0;
+
+    color: #0d3b66;
+
+    font-family:
+        "Trebuchet MS",
+        Arial,
+        sans-serif;
+
+    font-size: 27px;
+}
+
+
+.encontrado-encabezado p {
+    margin-top: 8px;
+
+    color: #6d7881;
+
+    font-size: 14px;
+}
+
+
+.detalle-encontrado {
+    margin-top: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.detalle-encontrado span {
+    width: 66px;
+    height: 2px;
+
+    background-color: #22b8cf;
+}
+
+
+.detalle-encontrado strong {
+    color: #ff6b6b;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   AVISO PRIVACIDAD
+   ========================================================= */
+
+.aviso-privacidad-reporte {
+    margin-bottom: 26px;
+
+    padding: 15px 17px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    border:
+        1px solid
+        #cfe6e4;
+
+    border-radius: 12px;
+
+    background-color: #f1faf9;
+
+    color: #4d626b;
+}
+
+
+.aviso-icono {
+    color: #159e9a;
+
+    font-size: 19px;
+}
+
+
+.aviso-privacidad-reporte strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+}
+
+
+.aviso-privacidad-reporte p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   SECCIONES
+   ========================================================= */
+
+.encontrado-seccion {
+    margin-bottom: 27px;
+}
+
+
+.encontrado-seccion h2 {
+    margin:
+        0
+        0
+        16px;
+
+    padding-bottom: 8px;
+
+    border-bottom:
+        1px solid
+        #dfe5e9;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.encontrado-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap:
+        17px
+        20px;
+}
+
+
+.campo-completo {
+    grid-column:
+        1 / -1;
+}
+
+
+/* =========================================================
+   CAMPOS
+   ========================================================= */
+
+.campo-encontrado {
+    text-align: left;
+}
+
+
+.campo-encontrado label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.campo-encontrado label span {
+    color: #ff6b6b;
+}
+
+
+.campo-encontrado input,
+.campo-encontrado select,
+.campo-encontrado textarea {
+    width: 100%;
+
+    border:
+        1px solid
+        #ccd7df;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background-color: #ffffff;
+
+    color: #333333;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    transition: 0.2s ease;
+}
+
+
+.campo-encontrado input,
+.campo-encontrado select {
+    height: 46px;
+
+    padding:
+        0
+        13px;
+}
+
+
+.campo-encontrado input[type="file"] {
+    height: auto;
+
+    padding: 10px;
+}
+
+
+.campo-encontrado textarea {
+    min-height: 90px;
+
+    padding: 12px;
+
+    resize: vertical;
+}
+
+
+.campo-encontrado input:focus,
+.campo-encontrado select:focus,
+.campo-encontrado textarea:focus {
+    border-color: #22b8cf;
+
+    box-shadow:
+        0 0 0 3px rgba(34, 184, 207, 0.12);
+}
+
+
+.campo-encontrado input::placeholder,
+.campo-encontrado textarea::placeholder {
+    color: #99a5ad;
+}
+
+
+.campo-encontrado small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #7b878f;
+
+    font-size: 12px;
+}
+
+
+.texto-reservado {
+    color: #c05656 !important;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   NOTA UBICACIÓN
+   ========================================================= */
+
+.nota-ubicacion {
+    padding: 13px 15px;
+
+    border-left:
+        4px solid
+        #22b8cf;
+
+    border-radius: 8px;
+
+    background-color: #f7fbfc;
+}
+
+
+.nota-ubicacion strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #0d3b66;
+
+    font-size: 13px;
+}
+
+
+.nota-ubicacion p {
+    margin: 0;
+
+    color: #697780;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   DATOS DEL REPORTE
+   ========================================================= */
+
+.usuario-reporte {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+
+.usuario-reporte > div {
+    padding: 14px 16px;
+
+    border:
+        1px solid
+        #e0e7eb;
+
+    border-radius: 11px;
+
+    background-color: #fafcfd;
+}
+
+
+.usuario-reporte span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #78848c;
+
+    font-size: 11px;
+}
+
+
+.usuario-reporte strong {
+    color: #0d3b66;
+
+    font-size: 14px;
+}
+
+
+.tipo-reporte-encontrado {
+    color: #159e9a !important;
+}
+
+
+.nota-contacto {
+    margin-top: 13px;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    background-color: #f7f9fb;
+
+    color: #63727b;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CARTEL
+   ========================================================= */
+
+.cartel-info {
+    margin-bottom: 27px;
+
+    padding: 16px 18px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    border:
+        1px solid
+        #e0e7eb;
+
+    border-radius: 12px;
+
+    background-color: #fcfcfd;
+}
+
+
+.cartel-icono {
+    font-size: 24px;
+}
+
+
+.cartel-info strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+}
+
+
+.cartel-info p {
+    margin: 0;
+
+    color: #697780;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+.encontrado-botones {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+.btn-guardar-encontrado,
+.btn-cancelar-encontrado,
+.btn-regresar-encontrado {
+    min-height: 45px;
+
+    padding:
+        0
+        22px;
+
+    border-radius: 10px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.btn-guardar-encontrado {
+    border: none;
+
+    background-color: #0d3b66;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+
+.btn-guardar-encontrado:hover {
+    background-color: #125083;
+}
+
+
+.btn-cancelar-encontrado {
+    border:
+        1px solid
+        #ccd7df;
+
+    background-color: #ffffff;
+
+    color: #0d3b66;
+
+    cursor: pointer;
+}
+
+
+.btn-cancelar-encontrado:hover {
+    background-color: #f2f5f7;
+}
+
+
+.btn-regresar-encontrado {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid
+        #0d3b66;
+
+    background-color: #ffffff;
+
+    color: #0d3b66;
+
+    text-decoration: none;
+}
+
+
+.btn-regresar-encontrado:hover {
+    background-color: #0d3b66;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET / CELULAR
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .encontrado-main {
+        padding:
+            100px
+            15px
+            85px;
+    }
+
+
+    .encontrado-card {
+        padding:
+            25px
+            20px
+            28px;
+    }
+
+
+    .encontrado-grid,
+    .usuario-reporte {
+        grid-template-columns: 1fr;
+    }
+
+
+    .campo-completo {
+        grid-column: auto;
+    }
+
+
+    .encontrado-botones {
+        flex-direction: column;
+    }
+
+
+    .btn-guardar-encontrado,
+    .btn-cancelar-encontrado,
+    .btn-regresar-encontrado {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,851 @@
+/* =========================================================
+   CONECTANDO HUELLITAS
+   Candidatos viables
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f3ee;
+    color: #243746;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header-principal {
+    background: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+    box-shadow: 0 2px 10px rgba(13, 59, 102, 0.06);
+}
+
+.header-contenedor {
+    width: min(1180px, 92%);
+    min-height: 86px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo-header {
+    max-height: 64px;
+    width: auto;
+    display: block;
+}
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu-principal a {
+    color: #0d3b66;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.menu-principal a:hover {
+    color: #22a9bd;
+}
+
+.menu-principal .btn-login {
+    background: #0d3b66;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.menu-principal .btn-login:hover {
+    background: #22a9bd;
+}
+
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.contenedor-principal {
+    width: min(1120px, 92%);
+    margin: 34px auto 70px;
+}
+
+
+/* =========================================================
+   REGRESAR
+========================================================= */
+
+.barra-regreso {
+    margin-bottom: 22px;
+}
+
+.btn-regresar {
+    color: #0d3b66;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn-regresar:hover {
+    color: #22a9bd;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.encabezado-pagina {
+    margin-bottom: 28px;
+}
+
+.etiqueta-modulo {
+    display: inline-block;
+
+    background: #dff6f8;
+    color: #16899a;
+
+    padding: 6px 12px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+
+    margin-bottom: 9px;
+}
+
+.encabezado-pagina h1 {
+    color: #0d3b66;
+    font-size: 31px;
+    margin-bottom: 7px;
+}
+
+.encabezado-pagina p {
+    color: #667783;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   MASCOTA
+========================================================= */
+
+.tarjeta-mascota {
+    background: #0d3b66;
+    color: #ffffff;
+
+    border-radius: 15px;
+    padding: 24px 28px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 8px 22px rgba(13, 59, 102, 0.12);
+}
+
+.icono-mascota {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,0.12);
+    border-radius: 50%;
+
+    font-size: 27px;
+}
+
+.datos-mascota {
+    flex: 1;
+}
+
+.mini-etiqueta {
+    display: block;
+
+    color: #7b8992;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 3px;
+}
+
+.tarjeta-mascota .mini-etiqueta {
+    color: #b8d4e5;
+}
+
+.datos-mascota h2 {
+    font-size: 23px;
+    margin-bottom: 2px;
+}
+
+.datos-mascota p {
+    color: #d3e1ea;
+    font-size: 13px;
+}
+
+.estadisticas-mascota {
+    display: flex;
+    gap: 35px;
+}
+
+.estadisticas-mascota > div {
+    text-align: center;
+}
+
+.estadisticas-mascota span {
+    display: block;
+    color: #b8d4e5;
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+
+.estadisticas-mascota strong {
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   AVISO
+========================================================= */
+
+.aviso-seleccion {
+    display: flex;
+    gap: 14px;
+
+    background: #eef9fa;
+    border-left: 4px solid #22a9bd;
+
+    border-radius: 10px;
+
+    padding: 17px 20px;
+
+    margin-bottom: 15px;
+}
+
+.aviso-icono {
+    font-size: 19px;
+}
+
+.aviso-seleccion strong {
+    color: #0d3b66;
+}
+
+.aviso-seleccion p {
+    color: #61747f;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+
+/* =========================================================
+   DESEMPATE
+========================================================= */
+
+.criterio-desempate {
+    background: #fff9e9;
+
+    border-left: 4px solid #e3ad32;
+
+    border-radius: 8px;
+
+    padding: 13px 16px;
+
+    color: #725c27;
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   BLOQUE CANDIDATOS
+========================================================= */
+
+.bloque-candidatos {
+    background: #ffffff;
+
+    border: 1px solid #e3e8eb;
+    border-radius: 15px;
+
+    padding: 27px;
+
+    margin-bottom: 24px;
+
+    box-shadow: 0 5px 16px rgba(13, 59, 102, 0.05);
+}
+
+.titulo-listado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #edf0f2;
+}
+
+.titulo-listado h2 {
+    color: #0d3b66;
+    font-size: 21px;
+}
+
+.indicador-orden {
+    background: #f1f5f7;
+    color: #6e7f89;
+
+    padding: 7px 11px;
+    border-radius: 20px;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   TARJETAS CANDIDATOS
+========================================================= */
+
+.lista-candidatos {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.tarjeta-candidato {
+    border: 1px solid #dce4e8;
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    transition: 0.2s ease;
+}
+
+.tarjeta-candidato:hover {
+    border-color: #9dcbd2;
+    box-shadow: 0 5px 14px rgba(13, 59, 102, 0.06);
+}
+
+
+/* =========================================================
+   CABECERA CANDIDATO
+========================================================= */
+
+.cabecera-candidato {
+    background: #f6f9fa;
+
+    padding: 18px 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    border-bottom: 1px solid #e3e9ec;
+}
+
+.orden-candidato {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #0d3b66;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.identidad-candidato {
+    flex: 1;
+}
+
+.folio {
+    color: #22a9bd;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.identidad-candidato h3 {
+    color: #0d3b66;
+    font-size: 18px;
+    margin: 1px 0;
+}
+
+.identidad-candidato p {
+    color: #76858e;
+    font-size: 12px;
+}
+
+.estado-viable {
+    background: #e5f6ed;
+    color: #28754d;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DATOS
+========================================================= */
+
+.grid-datos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+    padding: 20px;
+}
+
+.dato {
+    background: #fafbfb;
+
+    border: 1px solid #e9edef;
+    border-radius: 9px;
+
+    padding: 12px 13px;
+}
+
+.dato span {
+    display: block;
+
+    color: #7c8991;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    margin-bottom: 3px;
+}
+
+.dato strong {
+    color: #334854;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   OBSERVACIONES
+========================================================= */
+
+.observacion-revision {
+    margin: 0 20px 18px;
+
+    background: #f8f5ef;
+
+    border-left: 3px solid #d7b56d;
+
+    border-radius: 7px;
+
+    padding: 12px 14px;
+}
+
+.observacion-revision span {
+    display: block;
+
+    color: #786a4c;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    margin-bottom: 3px;
+}
+
+.observacion-revision p {
+    color: #655f53;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ACCIONES CANDIDATO
+========================================================= */
+
+.acciones-candidato {
+    border-top: 1px solid #edf0f2;
+
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.btn-ver {
+    color: #0d3b66;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.btn-ver:hover {
+    color: #22a9bd;
+}
+
+.seleccionar-candidato {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    cursor: pointer;
+
+    color: #0d3b66;
+    font-size: 13px;
+}
+
+.seleccionar-candidato input {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio-personalizado {
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #aebbc2;
+
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.seleccionar-candidato input:checked + .radio-personalizado {
+    border-color: #22a9bd;
+}
+
+.seleccionar-candidato input:checked + .radio-personalizado::after {
+    content: "";
+
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #22a9bd;
+
+    top: 3px;
+    left: 3px;
+}
+
+
+/* =========================================================
+   CONFIRMACIÓN
+========================================================= */
+
+.bloque-confirmacion {
+    background: #ffffff;
+
+    border: 2px solid #0d3b66;
+    border-radius: 15px;
+
+    padding: 27px;
+
+    margin-bottom: 24px;
+
+    box-shadow: 0 7px 20px rgba(13, 59, 102, 0.07);
+}
+
+.confirmacion-texto h2 {
+    color: #0d3b66;
+    font-size: 21px;
+    margin-bottom: 4px;
+}
+
+.confirmacion-texto p {
+    color: #667783;
+    font-size: 14px;
+}
+
+.nota-confirmacion {
+    margin-top: 18px;
+
+    background: #fff9e9;
+
+    border-left: 4px solid #e3ad32;
+
+    border-radius: 8px;
+
+    padding: 14px 16px;
+
+    color: #725c27;
+    font-size: 13px;
+}
+
+.acciones-finales {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 22px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #edf0f2;
+}
+
+.btn-secundario,
+.btn-continuar {
+    min-width: 170px;
+
+    padding: 12px 20px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    text-align: center;
+
+    transition: 0.2s ease;
+}
+
+.btn-secundario {
+    background: #ffffff;
+    color: #536773;
+
+    border: 1px solid #bdc9cf;
+
+    text-decoration: none;
+}
+
+.btn-secundario:hover {
+    background: #f1f4f5;
+}
+
+.btn-continuar {
+    background: #0d3b66;
+    color: #ffffff;
+
+    border: none;
+}
+
+.btn-continuar:hover {
+    background: #22a9bd;
+}
+
+
+/* =========================================================
+   SIN CANDIDATOS
+========================================================= */
+
+.sin-candidatos {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: #fafbfb;
+
+    border-radius: 12px;
+}
+
+.sin-candidatos-icono {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.sin-candidatos h3 {
+    color: #0d3b66;
+    margin-bottom: 5px;
+}
+
+.sin-candidatos p {
+    color: #71818a;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   NOTA VERSIÓN
+========================================================= */
+
+.nota-version {
+    background: #ffffff;
+
+    border: 1px dashed #bccad1;
+    border-radius: 10px;
+
+    padding: 15px 18px;
+
+    text-align: center;
+
+    color: #71818a;
+    font-size: 12px;
+}
+
+.nota-version strong {
+    color: #0d3b66;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer-principal {
+    background: #0d3b66;
+    color: #dce9f1;
+
+    text-align: center;
+
+    padding: 24px 20px;
+
+    font-size: 13px;
+}
+
+.footer-principal span {
+    color: #22a9bd;
+    margin: 0 8px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .grid-datos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .estadisticas-mascota {
+        gap: 20px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .header-contenedor {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .menu-principal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .contenedor-principal {
+        width: 94%;
+        margin-top: 24px;
+    }
+
+    .encabezado-pagina h1 {
+        font-size: 26px;
+    }
+
+    .tarjeta-mascota {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .estadisticas-mascota {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .titulo-listado {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .grid-datos {
+        grid-template-columns: 1fr;
+    }
+
+    .acciones-candidato {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .seleccionar-candidato {
+        justify-content: center;
+
+        background: #f4f8fa;
+
+        border-radius: 8px;
+
+        padding: 10px;
+    }
+
+    .acciones-finales {
+        flex-direction: column-reverse;
+    }
+
+    .btn-secundario,
+    .btn-continuar {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .menu-principal {
+        flex-direction: column;
+    }
+
+    .cabecera-candidato {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .estado-viable {
+        margin-left: 53px;
+    }
+
+}

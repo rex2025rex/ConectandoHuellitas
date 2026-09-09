@@ -1,0 +1,395 @@
+/* =========================================================
+   ALTA DE ESPECIE
+   ========================================================= */
+
+.especie-main {
+    min-height: 100vh;
+
+    padding:
+        120px
+        25px
+        85px;
+
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 4% 35%,
+            rgba(34, 184, 207, 0.08) 0 34px,
+            transparent 35px
+        ),
+        radial-gradient(
+            circle at 92% 25%,
+            rgba(255, 107, 107, 0.08) 0 36px,
+            transparent 37px
+        ),
+        #f7f3ee;
+}
+
+
+/* TARJETA */
+
+.especie-card {
+    width: 100%;
+
+    max-width: 650px;
+
+    padding:
+        28px
+        38px
+        32px;
+
+    background-color: #ffffff;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 30px rgba(13, 59, 102, 0.14);
+}
+
+
+/* ENCABEZADO */
+
+.especie-encabezado {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.especie-encabezado h1 {
+    margin: 0;
+
+    font-family:
+        "Trebuchet MS",
+        Arial,
+        sans-serif;
+
+    font-size: 25px;
+
+    color: #0d3b66;
+}
+
+.especie-encabezado p {
+    margin-top: 8px;
+
+    color: #6b7780;
+
+    font-size: 14px;
+}
+
+
+/* DECORACIÓN */
+
+.detalle-especie {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 8px;
+}
+
+.detalle-especie span {
+    width: 68px;
+
+    height: 2px;
+
+    background-color: #22b8cf;
+}
+
+.detalle-especie strong {
+    color: #ff6b6b;
+
+    font-size: 16px;
+}
+
+
+/* SECCIÓN */
+
+.especie-seccion {
+    margin-bottom: 25px;
+}
+
+.especie-seccion h2 {
+    margin:
+        0
+        0
+        16px;
+
+    padding-bottom: 8px;
+
+    border-bottom:
+        1px solid
+        #dfe5e9;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* GRID */
+
+.especie-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap:
+        16px
+        20px;
+}
+
+.campo-completo {
+    grid-column:
+        1 / -1;
+}
+
+
+/* CAMPOS */
+
+.campo-especie {
+    text-align: left;
+}
+
+.campo-especie label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.campo-especie label span {
+    color: #ff6b6b;
+}
+
+.campo-especie input,
+.campo-especie select {
+    width: 100%;
+
+    height: 46px;
+
+    padding:
+        0
+        13px;
+
+    border:
+        1px solid
+        #ccd7df;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background-color: #ffffff;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    transition: 0.2s ease;
+}
+
+.campo-especie textarea {
+    width: 100%;
+
+    min-height: 95px;
+
+    padding:
+        12px
+        13px;
+
+    border:
+        1px solid
+        #ccd7df;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    resize: vertical;
+
+    background-color: #ffffff;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    transition: 0.2s ease;
+}
+
+.campo-especie input:focus,
+.campo-especie select:focus,
+.campo-especie textarea:focus {
+    border-color: #22b8cf;
+
+    box-shadow:
+        0 0 0 3px rgba(34, 184, 207, 0.12);
+}
+
+
+/* BOTONES */
+
+.especie-botones {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+/* GUARDAR */
+
+.btn-guardar-especie {
+    min-height: 45px;
+
+    padding:
+        0
+        22px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #0d3b66;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn-guardar-especie:hover {
+    background-color: #125083;
+}
+
+
+/* CANCELAR */
+
+.btn-cancelar-especie {
+    min-height: 45px;
+
+    padding:
+        0
+        22px;
+
+    border:
+        1px solid
+        #ccd7df;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn-cancelar-especie:hover {
+    background-color: #f2f5f7;
+}
+
+
+/* REGRESAR */
+
+.btn-regresar-especie {
+    min-height: 45px;
+
+    padding:
+        0
+        22px;
+
+    border:
+        1px solid
+        #0d3b66;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    color: #0d3b66;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.btn-regresar-especie:hover {
+    background-color: #0d3b66;
+
+    color: #ffffff;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 760px) {
+
+    .especie-main {
+        padding:
+            100px
+            16px
+            85px;
+    }
+
+    .especie-card {
+        padding:
+            25px
+            20px
+            28px;
+    }
+
+    .especie-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-completo {
+        grid-column: auto;
+    }
+
+    .especie-botones {
+        flex-direction: column;
+    }
+
+    .btn-guardar-especie,
+    .btn-cancelar-especie,
+    .btn-regresar-especie {
+        width: 100%;
+    }
+}

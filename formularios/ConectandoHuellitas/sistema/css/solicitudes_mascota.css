@@ -1,0 +1,481 @@
+/* =========================================================
+   CONECTANDO HUELLITAS
+   Solicitudes recibidas por mascota
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f7f3ee;
+    color: #0d3b66;
+}
+
+
+/* =========================================================
+   CONTENIDO GENERAL
+   ========================================================= */
+
+.contenido-principal {
+    width: 100%;
+    padding: 42px 24px 55px;
+}
+
+.contenedor-solicitudes {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 34px 36px 32px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 28px rgba(13, 59, 102, 0.08);
+}
+
+
+/* =========================================================
+   ENCABEZADO
+   ========================================================= */
+
+.encabezado-pagina {
+    margin-bottom: 28px;
+}
+
+.etiqueta-modulo {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #22a9bd;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.encabezado-pagina h1 {
+    margin: 0 0 9px;
+    color: #0d3b66;
+    font-size: 29px;
+    line-height: 1.2;
+}
+
+.encabezado-pagina p {
+    max-width: 830px;
+    margin: 0;
+    color: #667788;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   TARJETA MASCOTA
+   ========================================================= */
+
+.tarjeta-mascota {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 22px 25px;
+    margin-bottom: 22px;
+    border: 1px solid #dce8ed;
+    border-radius: 15px;
+    background: #fafdfe;
+}
+
+.mascota-principal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar-mascota {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5f7fa;
+    border-radius: 50%;
+    font-size: 26px;
+}
+
+.texto-pequeno {
+    display: block;
+    margin-bottom: 2px;
+    color: #22a9bd;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.mascota-principal h2 {
+    margin: 0;
+    color: #0d3b66;
+    font-size: 24px;
+}
+
+.clave-mascota {
+    display: block;
+    margin-top: 3px;
+    color: #758593;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DATOS DEL PROCESO
+   ========================================================= */
+
+.datos-proceso {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.dato-proceso {
+    padding-left: 22px;
+    border-left: 1px solid #dfe7eb;
+}
+
+.dato-etiqueta {
+    display: block;
+    margin-bottom: 5px;
+    color: #7a8996;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.dato-proceso strong {
+    color: #0d3b66;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   RESUMEN
+   ========================================================= */
+
+.resumen {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.tarjeta-resumen {
+    padding: 17px 20px;
+    border: 1px solid #e0e8ec;
+    border-radius: 12px;
+    background: #fafcfd;
+}
+
+.tarjeta-resumen.pendiente {
+    border-left: 4px solid #f0b429;
+}
+
+.tarjeta-resumen.viable {
+    border-left: 4px solid #22b8cf;
+}
+
+.tarjeta-resumen.rechazada {
+    border-left: 4px solid #ff6b6b;
+}
+
+.numero {
+    display: block;
+    margin-bottom: 2px;
+    color: #0d3b66;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.descripcion {
+    color: #6a7987;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   NOTA DE ORDEN
+   ========================================================= */
+
+.nota-orden {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 17px;
+    margin-bottom: 22px;
+    border-left: 4px solid #22b8cf;
+    border-radius: 8px;
+    background: #edf9fb;
+}
+
+.icono-nota {
+    color: #22a9bd;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nota-orden p {
+    margin: 0;
+    color: #526676;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   TABLA
+   ========================================================= */
+
+.contenedor-tabla {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #dfe8ec;
+    border-radius: 14px;
+}
+
+.tabla-solicitudes {
+    width: 100%;
+    min-width: 1130px;
+    border-collapse: collapse;
+}
+
+.tabla-solicitudes thead {
+    background: #0d3b66;
+}
+
+.tabla-solicitudes th {
+    padding: 15px 12px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tabla-solicitudes th:nth-child(3) {
+    text-align: left;
+}
+
+.tabla-solicitudes td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #e8edf0;
+    color: #465866;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabla-solicitudes tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-solicitudes tbody tr:hover {
+    background: #f8fbfc;
+}
+
+
+/* =========================================================
+   ORDEN Y FOLIO
+   ========================================================= */
+
+.numero-orden {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    background: #e9f3f8;
+    border-radius: 50%;
+    color: #0d3b66;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.folio {
+    color: #0d3b66 !important;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SOLICITANTE
+   ========================================================= */
+
+.solicitante {
+    text-align: left !important;
+}
+
+.solicitante strong {
+    color: #0d3b66;
+    font-size: 13px;
+}
+
+.estado-geografico {
+    display: block;
+    margin-top: 2px;
+    color: #83909b;
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ESTADOS
+   ========================================================= */
+
+.estado {
+    display: inline-block;
+    min-width: 83px;
+    padding: 7px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.estado-pendiente {
+    background: #fff3d5;
+    color: #9c6800;
+}
+
+.estado-viable {
+    background: #ddf7f3;
+    color: #167a6d;
+}
+
+.estado-rechazada {
+    background: #fde6e6;
+    color: #c44b4b;
+}
+
+
+/* =========================================================
+   BOTÓN
+   ========================================================= */
+
+.boton-revisar {
+    display: inline-block;
+    padding: 9px 13px;
+    border-radius: 8px;
+    background: #22a9bd;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.boton-revisar:hover {
+    background: #198fa1;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   AVISO PRECALIFICACIÓN
+   ========================================================= */
+
+.aviso-precalificacion {
+    margin-top: 22px;
+    padding: 14px 17px;
+    border: 1px solid #e2e8eb;
+    border-radius: 9px;
+    background: #fafbfc;
+    color: #657581;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.aviso-precalificacion strong {
+    color: #0d3b66;
+}
+
+
+/* =========================================================
+   ACCIONES INFERIORES
+   ========================================================= */
+
+.acciones-inferiores {
+    margin-top: 24px;
+}
+
+.boton-regresar {
+    display: inline-block;
+    padding: 10px 17px;
+    border: 1px solid #d7e0e5;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #0d3b66;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.boton-regresar:hover {
+    background: #f4f7f8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .tarjeta-mascota {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .datos-proceso {
+        width: 100%;
+    }
+
+    .dato-proceso:first-child {
+        padding-left: 0;
+        border-left: none;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .contenido-principal {
+        padding: 24px 12px 40px;
+    }
+
+    .contenedor-solicitudes {
+        padding: 24px 16px;
+        border-radius: 15px;
+    }
+
+    .encabezado-pagina h1 {
+        font-size: 24px;
+    }
+
+    .resumen {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .datos-proceso {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .dato-proceso {
+        width: 100%;
+        padding: 0;
+        border-left: none;
+    }
+
+    .boton-regresar {
+        width: 100%;
+        text-align: center;
+    }
+
+}

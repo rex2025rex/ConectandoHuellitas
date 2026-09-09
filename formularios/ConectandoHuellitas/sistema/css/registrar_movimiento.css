@@ -1,0 +1,481 @@
+.movimiento-main {
+    min-height: 100vh;
+
+    padding: 120px 25px 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background:
+        radial-gradient(
+            circle at 6% 25%,
+            rgba(34, 184, 207, 0.08) 0 34px,
+            transparent 35px
+        ),
+        radial-gradient(
+            circle at 95% 48%,
+            rgba(255, 107, 107, 0.08) 0 38px,
+            transparent 39px
+        ),
+        #f7f3ee;
+}
+
+
+.movimiento-card {
+    width: 100%;
+    max-width: 900px;
+
+    box-sizing: border-box;
+
+    padding: 30px 40px 35px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 30px rgba(13, 59, 102, 0.14);
+}
+
+
+/* ENCABEZADO */
+
+.movimiento-encabezado {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+.movimiento-encabezado h1 {
+    margin: 0;
+
+    color: #0d3b66;
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    font-size: 26px;
+}
+
+
+.movimiento-encabezado p {
+    margin-top: 8px;
+
+    color: #6b7780;
+
+    font-size: 14px;
+}
+
+
+.detalle-movimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 8px;
+}
+
+
+.detalle-movimiento span {
+    width: 68px;
+    height: 2px;
+
+    background: #22b8cf;
+}
+
+
+.detalle-movimiento strong {
+    color: #ff6b6b;
+}
+
+
+/* ANIMAL */
+
+.animal-resumen {
+    display: grid;
+
+    grid-template-columns: 70px 1fr 220px;
+
+    gap: 18px;
+
+    align-items: center;
+
+    margin-bottom: 29px;
+
+    padding: 17px 20px;
+
+    border: 1px solid rgba(34, 184, 207, 0.30);
+
+    border-radius: 14px;
+
+    background: rgba(34, 184, 207, 0.055);
+}
+
+
+.animal-foto {
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    font-size: 34px;
+
+    box-shadow:
+        0 3px 10px rgba(13, 59, 102, 0.10);
+}
+
+
+.animal-info h2 {
+    margin: 2px 0 5px;
+
+    color: #0d3b66;
+
+    font-size: 20px;
+}
+
+
+.animal-info p {
+    margin: 3px 0;
+
+    color: #5f6d76;
+
+    font-size: 13px;
+}
+
+
+.animal-etiqueta {
+    color: #22a9bd;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+.ubicacion-actual {
+    padding-left: 18px;
+
+    border-left: 1px solid #d8e2e7;
+}
+
+
+.ubicacion-actual span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #7d8990;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+.ubicacion-actual strong {
+    color: #0d3b66;
+
+    font-size: 13px;
+}
+
+
+/* SECCIÓN */
+
+.movimiento-seccion {
+    margin-bottom: 28px;
+}
+
+
+.movimiento-seccion > h2 {
+    margin: 0 0 17px;
+
+    padding-bottom: 9px;
+
+    border-bottom: 1px solid #dfe5e9;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+}
+
+
+/* GRID */
+
+.movimiento-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px 22px;
+}
+
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+
+/* CAMPOS */
+
+.campo-movimiento label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #0d3b66;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.campo-movimiento label span {
+    color: #ff6b6b;
+}
+
+
+.campo-movimiento input,
+.campo-movimiento select {
+    width: 100%;
+    height: 46px;
+
+    box-sizing: border-box;
+
+    padding: 0 13px;
+
+    border: 1px solid #ccd7df;
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: #333333;
+}
+
+
+.campo-movimiento textarea {
+    width: 100%;
+
+    min-height: 88px;
+
+    box-sizing: border-box;
+
+    padding: 12px 13px;
+
+    border: 1px solid #ccd7df;
+    border-radius: 10px;
+
+    outline: none;
+
+    resize: vertical;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+
+.campo-movimiento input:focus,
+.campo-movimiento select:focus,
+.campo-movimiento textarea:focus {
+    border-color: #22b8cf;
+
+    box-shadow:
+        0 0 0 3px rgba(34, 184, 207, 0.12);
+}
+
+
+/* NOTAS */
+
+.nota-movimiento,
+.nota-registro {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 14px;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    color: #62717a;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+}
+
+
+.nota-movimiento {
+    background: rgba(255, 107, 107, 0.06);
+}
+
+
+.nota-registro {
+    background: rgba(34, 184, 207, 0.07);
+
+    margin-bottom: 25px;
+}
+
+
+.nota-movimiento span {
+    color: #ff6b6b;
+
+    font-weight: bold;
+}
+
+
+.nota-registro span {
+    color: #22a9bd;
+
+    font-weight: bold;
+}
+
+
+.nota-movimiento p,
+.nota-registro p {
+    margin: 0;
+}
+
+
+/* BOTONES */
+
+.movimiento-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.btn-guardar,
+.btn-cancelar,
+.btn-regresar {
+    min-height: 46px;
+
+    box-sizing: border-box;
+
+    padding: 0 23px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.btn-guardar {
+    border: none;
+
+    background: #0d3b66;
+
+    color: #ffffff;
+}
+
+
+.btn-guardar:hover {
+    background: #125083;
+}
+
+
+.btn-cancelar {
+    border: 1px solid #ccd7df;
+
+    background: #ffffff;
+
+    color: #0d3b66;
+}
+
+
+.btn-regresar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #0d3b66;
+
+    background: #ffffff;
+
+    color: #0d3b66;
+
+    text-decoration: none;
+}
+
+
+.btn-regresar:hover {
+    background: #0d3b66;
+
+    color: #ffffff;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    .movimiento-main {
+        padding: 100px 15px 90px;
+    }
+
+    .movimiento-card {
+        padding: 25px 20px 30px;
+    }
+
+    .animal-resumen {
+        grid-template-columns: 70px 1fr;
+    }
+
+    .ubicacion-actual {
+        grid-column: 1 / -1;
+
+        padding: 13px 0 0;
+
+        border-left: none;
+
+        border-top: 1px solid #d8e2e7;
+    }
+
+    .movimiento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-completo {
+        grid-column: auto;
+    }
+
+    .movimiento-botones {
+        flex-direction: column;
+    }
+
+    .btn-guardar,
+    .btn-cancelar,
+    .btn-regresar {
+        width: 100%;
+    }
+
+}

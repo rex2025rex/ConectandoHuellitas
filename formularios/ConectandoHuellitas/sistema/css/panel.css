@@ -1,0 +1,495 @@
+/* =========================================================
+   CONECTANDO HUELLITAS
+   PANEL PRINCIPAL
+   ========================================================= */
+
+
+/* =========================================================
+   ÁREA CENTRAL
+   ========================================================= */
+
+.panel-main {
+    min-height: 100vh;
+
+    padding:
+        122px
+        25px
+        90px;
+
+    background:
+        radial-gradient(
+            circle at 4% 35%,
+            rgba(34, 184, 207, 0.07) 0 34px,
+            transparent 35px
+        ),
+        radial-gradient(
+            circle at 94% 22%,
+            rgba(255, 107, 107, 0.07) 0 36px,
+            transparent 37px
+        ),
+        #f7f3ee;
+}
+
+
+.panel-contenedor {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   PRESENTACIÓN
+   ========================================================= */
+
+.panel-presentacion {
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+
+.panel-mini-titulo {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #22aeb3;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.panel-presentacion h1 {
+    margin: 0;
+
+    color: #0d3b66;
+
+    font-family:
+        "Trebuchet MS",
+        Arial,
+        sans-serif;
+
+    font-size: 28px;
+}
+
+
+.panel-presentacion p {
+    margin-top: 7px;
+
+    color: #6f7b84;
+
+    font-size: 14px;
+}
+
+
+.detalle-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-top: 8px;
+}
+
+
+.detalle-panel span {
+    width: 65px;
+    height: 2px;
+
+    background-color: #22b8cf;
+}
+
+
+.detalle-panel strong {
+    color: #ff6b6b;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   MÓDULOS
+   ========================================================= */
+
+.panel-modulo {
+    width: 100%;
+
+    margin-bottom: 14px;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        #e1e7eb;
+
+    border-radius: 16px;
+
+    background-color: #ffffff;
+
+    box-shadow:
+        0 5px 14px rgba(13, 59, 102, 0.055);
+
+    transition:
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.panel-modulo.activo {
+    border-color: #b9dedd;
+
+    box-shadow:
+        0 7px 18px rgba(13, 59, 102, 0.08);
+}
+
+
+/* =========================================================
+   CABECERA DEL MÓDULO
+   ========================================================= */
+
+.panel-modulo-cabecera {
+    width: 100%;
+
+    padding:
+        17px
+        20px;
+
+    border: none;
+
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.panel-modulo-cabecera:hover {
+    background-color: #fbfdfd;
+}
+
+
+.panel-modulo-identidad {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.panel-modulo-icono {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background-color: #edf9f8;
+
+    color: #0d3b66;
+
+    font-size: 22px;
+}
+
+
+.panel-modulo-etiqueta {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #22aeb3;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+
+.panel-modulo-texto h2 {
+    margin: 0 0 3px;
+
+    color: #153b5d;
+
+    font-size: 18px;
+}
+
+
+.panel-modulo-texto p {
+    margin: 0;
+
+    color: #76828b;
+
+    font-size: 13px;
+}
+
+
+.panel-flecha {
+    flex-shrink: 0;
+
+    color: #22aeb3;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   CONTENIDO DESPLEGABLE
+   ========================================================= */
+
+.panel-modulo-contenido {
+    display: none;
+
+    padding:
+        4px
+        20px
+        20px;
+}
+
+
+.panel-modulo.activo
+.panel-modulo-contenido {
+    display: block;
+}
+
+
+/* =========================================================
+   OPCIONES
+   ========================================================= */
+
+.panel-opciones {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 12px;
+
+    padding-top: 15px;
+
+    border-top:
+        1px solid
+        #edf1f3;
+}
+
+
+.panel-opcion {
+    min-height: 92px;
+
+    padding: 14px;
+
+    display: grid;
+
+    grid-template-columns:
+        42px
+        1fr
+        18px;
+
+    align-items: center;
+
+    gap: 11px;
+
+    border:
+        1px solid
+        #e4e9ed;
+
+    border-radius: 12px;
+
+    background-color: #ffffff;
+
+    color: inherit;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+.panel-opcion:hover {
+    transform: translateY(-2px);
+
+    border-color: #65c8c4;
+
+    box-shadow:
+        0 5px 13px rgba(13, 59, 102, 0.08);
+}
+
+
+.panel-opcion-icono {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background-color: #f0f8f8;
+
+    color: #0d3b66;
+
+    font-size: 19px;
+}
+
+
+.panel-opcion-texto h3 {
+    margin:
+        0
+        0
+        4px;
+
+    color: #163b5b;
+
+    font-size: 14px;
+}
+
+
+.panel-opcion-texto p {
+    margin: 0;
+
+    color: #7b868e;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+.panel-opcion-flecha {
+    color: #22aeb3;
+
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .panel-opciones {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .panel-main {
+        padding:
+            100px
+            14px
+            82px;
+    }
+
+
+    .panel-presentacion h1 {
+        font-size: 24px;
+    }
+
+
+    .panel-modulo-cabecera {
+        padding:
+            15px
+            13px;
+    }
+
+
+    .panel-modulo-icono {
+        width: 42px;
+        height: 42px;
+
+        font-size: 19px;
+    }
+
+
+    .panel-modulo-texto h2 {
+        font-size: 15px;
+    }
+
+
+    .panel-modulo-texto p {
+        font-size: 11px;
+    }
+
+
+    .panel-modulo-contenido {
+        padding:
+            3px
+            13px
+            16px;
+    }
+
+
+    .panel-opciones {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR PEQUEÑO
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .panel-modulo-texto p {
+        display: none;
+    }
+
+
+    .panel-opcion {
+        min-height: 82px;
+
+        grid-template-columns:
+            38px
+            1fr
+            16px;
+
+        padding:
+            12px
+            10px;
+    }
+
+
+    .panel-opcion-icono {
+        width: 38px;
+        height: 38px;
+
+        font-size: 17px;
+    }
+
+}
